@@ -1,0 +1,261 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    margin: auto;
+    max-width: 600px;
+    min-width: 600px;
+    height: 100%;
+}
+
+.header{
+    padding: 20px 20px 10px;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(0, 61, 121);
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.button{
+    background-color: rgb(103, 178, 232); /* Green */
+    border: none;
+    border-radius: 2px;
+    color: white;
+    /* padding: 15px 32px; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    /* font-size: 16px; */
+}
+
+.app_info{
+    width: 100%;
+    margin-bottom: 10px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.bank_name{
+    width: 160px;
+    height: 60px;
+}
+
+.user_container{
+    /* background-color: aqua; */
+    width: 100%;
+    display:flex ;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.user_name{
+    padding: 5px 0;
+}
+
+#name{
+    display: inline;
+}
+
+/* .user_date #date{
+    margin-top: 5px;
+} */
+
+.user_insentif_nominal{
+    display: inline-block;
+}
+
+.user_graph{
+    margin: auto;
+    max-width: 600px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(0, 61, 121);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.kum_blended_graph, .kum_graph, .kur_graph, .runoff_graph{
+    width: 250px;
+    height: 300px;
+    background-color: rgb(0, 61, 121);
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.kum_blended_graph canvas{
+    width: 2px;
+}
+
+.nominal{
+    margin-top: 10px;
+    justify-content: center;
+    font-weight: lighter;
+    font-size:medium;
+}
+
+.nilai_kum_blended, .nilai_kur, .nilai_kum, .nilai_runoff{
+    display: inline;
+}
+
+.nilai_dalam_juta{
+    display: inline;
+}
+
+
+.user_kpi_data{
+    margin: auto;
+    max-width: 600px;
+    padding: 15px 5px;
+    box-sizing: border-box;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(0, 61, 121);
+    display: flex;
+    justify-content: space-around;
+    font-size: 12px;
+}
+
+.agen_bb_data_graph, .livin_data_graph, .livin_merchant_data_graph{
+    width: 110px;
+    height: 12px;
+    background-color: rgb(103, 178, 232);
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.nilai_agen_bb, .nilai_livin, .nilai_livin_merchant{
+    display: inline-block;
+}
+
+.user_data{
+    margin: auto;
+    max-width: 600px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background-color: #f3f3f3;
+    padding: 10px 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.leads, .leads_report, .kpi_graph, .npl, .npl_area_overview, .npl_report{
+    width: 250px;
+    height: 150px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: white;
+    margin: 10px;
+    box-shadow: 2px 2px 1px #888;
+}
+
+.kpi_graph, .npl_report{
+    height: 200px;
+}
+
+.leads_data{
+    /* background-color: aqua; */
+    margin-top: 20px;
+    font-weight: medium;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.kum_blended_leads, .kum_leads, .kur_leads{
+    text-align: center;
+}
+
+.kum_blended_nilai, .kum_nilai, .kur_nilai{
+    padding: 5px 0;
+    font-size: 30px;
+    font-weight: normal;
+    color: rgb(0, 61, 121);
+    text-shadow: 1px 1px #888;
+}
+
+.leads_report form input{
+    /* width: 70%; */
+    display: inline-block;
+    margin: 4px 0;
+    justify-items: left;
+}
+
+.leads_report form label{
+    /* width: 70%; */
+    display: inline-block;
+    margin: 4px 0;
+    font-size: 12px;
+}
+
+
+.selector_kpi_graph{
+    padding: 5px 0;
+}
+
+.kpi_graph_achievement_filter{
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+}
+
+.npl_data{
+    /* background-color: aqua; */
+    margin-top: 20px;
+    font-weight: medium;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.jatuh_tempo_npl, .kol2a_npl, .npl_npl, .npl_rasio_npl{
+    text-align: center;
+}
+
+.jatuh_tempo_npl_nilai, .kol2a_npl_nilai, .npl_nilai, .npl_rasio_nilai{
+    padding: 5px 0;
+    font-size: 30px;
+    font-weight: normal;
+    color: rgb(0, 61, 121);
+    text-shadow: 1px 1px #888;
+}
+
+.npl_report form input{
+    /* width: 70%; */
+    display: inline-block;
+    margin: 5px 0;
+}
+
+.npl_report form{
+    /* width: 70%; */
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.navigation{
+    margin: auto;
+    max-width: 600px;
+    height: 60px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(0, 61, 121);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navigation_share{
+    text-align: center;
+}
+
+.navigation_data{
+    text-align: center;
+}
