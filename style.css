@@ -78,7 +78,7 @@ body{
     flex-wrap: wrap;
 }
 
-.kum_blended_graph, .kum_graph, .kur_graph, .runoff_graph{
+.kredit_graph, .dana_graph, .kum_graph, .kur_graph{
     width: 250px;
     height: 300px;
     background-color: rgb(0, 61, 121);
@@ -88,10 +88,6 @@ body{
     text-align: center;
 }
 
-.kum_blended_graph canvas{
-    width: 2px;
-}
-
 .nominal{
     margin-top: 10px;
     justify-content: center;
@@ -99,14 +95,13 @@ body{
     font-size:medium;
 }
 
-.nilai_kum_blended, .nilai_kur, .nilai_kum, .nilai_runoff{
+#kredit_val, #dana_val, #kum_val, #kur_val{
     display: inline;
 }
 
 .nilai_dalam_juta{
     display: inline;
 }
-
 
 .user_kpi_data{
     margin: auto;
@@ -173,7 +168,7 @@ body{
     text-align: center;
 }
 
-.kum_blended_nilai, .kum_nilai, .kur_nilai{
+.kum_blended_person_val, .kum_person_val, .kur_person_val{
     padding: 5px 0;
     font-size: 30px;
     font-weight: normal;
@@ -219,7 +214,7 @@ body{
     text-align: center;
 }
 
-.jatuh_tempo_npl_nilai, .kol2a_npl_nilai, .npl_nilai, .npl_rasio_nilai{
+.jatuh_tempo_npl_val, .kol2a_npl_val, .npl_val, .npl_rasio_val{
     padding: 5px 0;
     font-size: 30px;
     font-weight: normal;
@@ -258,4 +253,64 @@ body{
 
 .navigation_data{
     text-align: center;
+}
+
+.overlay_upload{
+    position: fixed;
+    margin-left: 0;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    opacity: 1;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    align-content: center;
+}
+
+.upload_file{
+    margin: auto;
+    padding: 10px;
+    width: 450px;
+    height: 200px;
+    background-color: #f3f3f3;
+    border-radius: 15px;
+}
+
+.upload_file label{
+    display: inline-block;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+}
+
+.upload_file input{
+    display: block;
+    margin-left: 10px;
+    font-size: 16px;
+    background: #f3f3f3;
+    border-radius: 5px;
+    width: 430px;
+    padding-bottom: 5px;
+}
+
+.button_area{
+    display: flex;
+    justify-content: space-around;
+}
+
+.upload_file button{
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 20px;
+    background-color: rgb(103, 178, 232);
+    color: #f3f3f3;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
 }
